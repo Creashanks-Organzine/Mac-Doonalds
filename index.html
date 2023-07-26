@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="mac_doonalds.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Forms Review</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="https://cdn.drawception.com/drawings/FzSZTFJRVt.png" alt="Mac Doonalds Logo" id="logo">
+      <hr>
+      <form action="submission.html" method="POST">
+        <h1>Create a borgor!</h1>
+        <section class="protein">
+          <label for="patty">What type of protein would you like?</label>
+          <textarea name="protein" id="protein">Example: Blobfish meat</textarea>
+        </section>
+        <hr>
+        
+        <section class="patties">
+          <label for="amount">How many patties would you like?</label>
+          <input type="number" name="amount" id="amount">
+        </section>
+        <hr>
+        
+        <section class="cooked">
+          <label for="doneness">How do you want your patty cooked</label>
+          <br>
+          <span>Uncooked</span>
+          <input type="range" name="doneness" id="doneness" value="3" min="1" max="2">
+          <span>Charcoal</span>
+        </section>
+        <hr>
+        
+        <section class="toppings">
+          <span>What toppings would you like?</span>
+          <br>
+          <input type="checkbox" name="topping" id="lettuce" value="lettuce">
+          <label for="lettuce">Lettuce</label>
+          <input type="checkbox" name="topping" id="tomato" value="tomato">
+          <label for="tomato">Tomato</label>
+          <input type="checkbox" name="topping" id="toenails" value="toenails">
+          <label for="toenails">Toenails</label>
+        </section>
+        <hr>
+        
+        <section class="Roaches">
+          <span>Would you like to add cockroaches?</span>
+          <br>
+          <input type="radio" name="cockroaches" id="yes" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" name="cockroaches" id="definately yes" value="ofc">
+          <label for="ofc">Definately yes</label>
+        </section>
+        <hr>
+       
+        <section class="bun-type">
+          <label for="bun">What type of bun would you like?</label>
+          <select name="bun" id="bun">
+            <option value="sesame">Sesame (street)</option>
+            <option value="potatoe">Poisonous Potato</option>
+            <option value="doughnut">Mystery Cream-filled Doughnut</option>
+          </select>
+        </section>
+        <hr>
+        
+        <section class="sauce-selection">
+          <label for="sauce">What type of sauce would you like?</label>
+          <input list="sauces" id="sauce" name="sauce">
+          <datalist id="sauces">
+            <option value="not blood 100%"></option>
+            <option value="mayo"></option>
+            <option value="worcestershire"></option>
+          </datalist>
+        </section>
+        <hr>
+        <section class="extra-info">
+          <label for="extra">Anything else you want to add?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="3" cols="40">Example: Human Appendages</textarea>
+        </section>
+        <hr>
+
+        <section class="submission">
+          <input type="submit" value="Submit">
+        </section>
+      </form>
+    </section>
+  </body>
+</html>
+
